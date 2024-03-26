@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body, html {
+    height: 100%;
+    background-color: #1f1f1f;
+    scrollbar-width: thin;
+}
+
+.hero {
+  background-image: url("/photos/About\ Me.png");
+
+  height: 44%;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo {
+    max-height: 60px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: #ffffff;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover {
+    color: #fd4766;
+}
+nav ul li p {
+    color: #ffffff;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li p:hover {
+    color: #ffffff;
+}
+nav ul li p:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+    bottom: 0;
+}
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: 0.3s;
+    bottom: 0;
+}
+nav ul li p:hover:after {
+    width: 100%;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+.btn {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+.btn:hover {
+    background: transparent;
+    border-color: #fd4766;
+    color: #fd4766;
+}
+.content {
+    position: absolute;
+    top: 110%;
+    left: 8%;
+}
+.content .title {
+    color: #0a0a0a;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(
+        120deg,
+        #1c99fe 20.69%,
+        #7644ff 50.19%,
+        #fd4766 79.69%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1 {
+    color: #dadaff;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span {
+    color: #ff3d4d;
+}
+.content p {
+    color: #dadaff;
+    bottom: 50px;
+    top: 25px;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    
+}
+
+.side-by-side .divaboutme2 {
+    padding-left: 250px;
+}
+
+.skills{
+    width: 600px;
+    min-width:300px;
+    max-width: 100%;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-header{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.skills-container{
+    max-width: 100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding:20px;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+ .skill-container{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    position: relative;
+ }
+
+ .skill-container p{
+    margin: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+ }
+
+ .bar{
+    width:100%;
+    background: #724747;
+    display:block;
+    height: 20px;
+    border:none;
+    border-radius: 100vw;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.25, 8, .25, 1);
+ }
+
+ .bar span{
+    height:20px;
+    float: left;
+    background: #ff5252;
+    border:none;
+    border-radius: 100vw;
+ }
+
+/* adding animation to skill bar */
+
+ .html.animate, .css.animate{
+    width: 96%;
+    animation: html_css 3s;
+ }
+
+ .javascript.animate{
+    width:48%;
+    animation: javascript 3s;
+ }
+
+ .react.animate{
+    width:95%;
+    animation: react 3s;
+ }
+
+ .node.animate{
+    width:84%;
+    animation: node 3s;
+ }
+
+ @keyframes html_css{
+    0%{
+        width:0%
+    };
+
+    100%{
+        width:96%
+    }
+ }
+
+ @keyframes javascript{
+    0%{
+        width:0%
+    };
+
+    100%{
+        width:48%
+    }
+ }
+
+ @keyframes react{
+    0%{
+        width:0%
+    };
+
+    100%{
+        width:95%
+    }
+ }
+
+ @keyframes node{
+    0%{
+        width:0%
+    };
+
+    100%{
+        width:84%
+    }
+ }
+
+ .percentage{
+    content: "";
+    position: absolute;
+    top:12px;
+    width:25px;
+    height:20px;
+    background: #ff5252;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    border-radius: 2px;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+ }
+
+ .percentage::after{
+    content: "";
+    position: absolute;
+    top:15px;
+    left:50%;
+    transform: translateX(-50%) rotate(45deg);
+    margin: auto;
+    width:10px;
+    height:10px;
+    background: #ff5252;
+    z-index:-1;
+ }
+
+ /* adding animation to .percentage */
+
+ .html-percentage.animate,
+ .css-percentage.animate{
+    left:96%;
+    animation: html_css_percentage 3s;
+ }
+
+ .javascript-percentage.animate{
+    left:48%;
+    animation: javascript_percentage 3s;
+ }
+
+ .react-percentage.animate{
+    left:95%;
+    animation: react_percentage 3s;
+ }
+
+ .node-percentage.animate{
+    left:84%;
+    animation: react_percentage 3s;
+ }
+
+ @keyframes html_css_percentage{
+    0%{
+        left:0
+    };
+    100%{
+        left:96%;
+    }
+ }
+
+ @keyframes javascript_percentage{
+    0%{
+        left:0
+    };
+    100%{
+        left:48%;
+    }
+ }
+
+ @keyframes react_percentage{
+    0%{
+        left:0
+    };
+    100%{
+        left:95%;
+    }
+ }
+
+ @keyframes node_percentage{
+    0%{
+        left:0
+    };
+    100%{
+        left:84%;
+    }
+ }
+
+.tag {
+    color: aliceblue;
+    background-color: #595959;
+    border-radius: 25px;
+    border-style: outset;
+    padding-left: 480px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.qna {
+    padding-top: 1000px;
+    color: aliceblue;
+    padding-left: 100px;
+}
+
+.qna span {
+    background-color: #ff5555;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}   

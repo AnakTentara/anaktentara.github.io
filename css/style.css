@@ -11,7 +11,7 @@ a {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url(./photos/wallpaperhome.png);
+    background: url(/photos/wallpaperhome.png);
     background-size: cover;
 }
 nav {

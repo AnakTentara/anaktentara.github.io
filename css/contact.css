@@ -143,15 +143,12 @@ nav ul li a:hover:after {
     -moz-osx-font-smoothing: grayscale;
   }
   
-  body, button, input {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-  }
-  
   .background {
     display: flex;
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
   }
   
   .container {
